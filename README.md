@@ -11,6 +11,7 @@ A desktop application with built-in online maps that allows you to take satellit
 Windows Forms C# (.Net Framework)
 ### Backend
 C# (.Net Core) + Python + OpenCV
+
 [The server](https://github.com/DefT346/WildWoodServer) is based on [our library](https://github.com/DefT346/OMTP)
 
 ***
@@ -28,4 +29,5 @@ C# (.Net Core) + Python + OpenCV
 Windows Forms C# (.Net Framework)
 ### Backend
 C# (.Net Core) + Python + OpenCV
+
 [Сервер](https://github.com/DefT346/WildWoodServer) основан на [нашей библиотеке](https://github.com/DefT346/OMTP)
