@@ -1,9 +1,7 @@
 #### Not maintained by developers. Не поддерживается разработчиками.
 # WildWood Desktop. Hackathon Spring 2022 DSTU. 
 
-<p align="center">
-  <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/71736306a5d2f58a121471ffed89be87feb60ea7/WWLogo.png" />
-</p>
+![Logo](/WWLogo.jpg)
 
 ## Problem
 Analysis of the image for the presence of a forest and finding a percentage on its surface. [Show full](https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/Hackathon%20Problem.pdf)
