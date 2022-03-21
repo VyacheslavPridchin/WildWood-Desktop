@@ -2,7 +2,7 @@
 # WildWood Desktop. Hackathon Spring 2022 DSTU. 
 
 <p align="center">
-  <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/WWLogo.png" />
+  <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/gh-pages/WWLogo.png" />
 </p>
 
 ## Problem
