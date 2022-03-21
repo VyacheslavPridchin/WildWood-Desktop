@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+#### Not maintained by developers. Не поддерживается разработчиками.
+# WildWood Desktop. Hackathon Spring 2022 DSTU. 
 
-You can use the [editor on GitHub](https://github.com/VyacheslavPridchin/WildWood-Desktop/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<p align="center">
+  <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/WWLogo.png" />
+</p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Problem
+Analysis of the image for the presence of a forest and finding a percentage on its surface. [Show full](https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/Hackathon%20Problem.pdf)
 
-### Markdown
+## Solution
+A desktop application with built-in online maps that allows you to take satellite images of different times and calculate the percentage of forest cover using computer vision.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Technology stack
+### Frontend
+Windows Forms C# (.Net Framework)
+### Backend
+C# (.Net Core) + Python + OpenCV
 
-```markdown
-Syntax highlighted code block
+[The server](https://github.com/DefT346/WildWoodServer) is based on [our library](https://github.com/DefT346/OMTP)
 
-# Header 1
-## Header 2
-### Header 3
+***
 
-- Bulleted
-- List
+# WildWood Desktop. Хакатон Spring 2022 ДГТУ.
 
-1. Numbered
-2. List
+## Проблема
+Анализ изображения на наличие леса и нахождение процентна его поверхности. [Показать полностью](https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/Hackathon%20Problem.pdf)
 
-**Bold** and _Italic_ and `Code` text
+## Решение
+Настольное приложение со встроенными онлайн-картами, позволяющее делать спутниковые снимки разного времени и вычислять процент лесного покрова с помощью компьютерного зрения.
 
-[Link](url) and ![Image](src)
-```
+## Стек технологий
+### Frontend
+Windows Forms C# (.Net Framework)
+### Backend
+C# (.Net Core) + Python + OpenCV
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/VyacheslavPridchin/WildWood-Desktop/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[Сервер](https://github.com/DefT346/WildWoodServer) основан на [нашей библиотеке](https://github.com/DefT346/OMTP)
