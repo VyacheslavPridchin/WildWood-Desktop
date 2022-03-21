@@ -1,3 +1,4 @@
+<p align="center">
 #### Not maintained by developers. Не поддерживается разработчиками.
 # WildWood Desktop. Hackathon Spring 2022 DSTU. 
 
@@ -34,3 +35,4 @@ Windows Forms C# (.Net Framework)
 C# (.Net Core) + Python + OpenCV
 
 [Сервер](https://github.com/DefT346/WildWoodServer) основан на [нашей библиотеке](https://github.com/DefT346/OMTP)
+</p>
