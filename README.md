@@ -1,5 +1,5 @@
 #### Not maintained by developers. Не поддерживается разработчиками.
-# [WildWood Desktop. Hackathon Spring 2022 DSTU.](https://vyacheslavpridchin.github.io/WildWood-Desktop/)
+# WildWood Desktop. Hackathon Spring 2022 DSTU.
 
 <p align="center">
   <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/WWLogo.png" />
@@ -21,7 +21,7 @@ C# (.Net Core) + Python + OpenCV
 
 ***
 
-# [WildWood Desktop. Хакатон Spring 2022 ДГТУ.](https://vyacheslavpridchin.github.io/WildWood-Desktop/)
+# WildWood Desktop. Хакатон Spring 2022 ДГТУ.
 
 ## Проблема
 Анализ изображения на наличие леса и нахождение процентна его поверхности. [Показать полностью](https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/Hackathon%20Problem.pdf)
