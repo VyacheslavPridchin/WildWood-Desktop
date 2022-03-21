@@ -1,4 +1,4 @@
-# WildWood-Desktop. Hackathon Spring 2022 DSTU
+# WildWood-Desktop. Hackathon Spring 2022 DSTU. Not maintained by developers.
 
 ## Problem
 Analysis of the image for the presence of a forest and finding a percentage on its surface. [Show full](https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/Hackathon%20Problem.pdf)
@@ -16,7 +16,7 @@ C# (.Net Core) + Python + OpenCV
 
 ***
 
-# WildWood-Desktop. Хакатон Spring 2022 ДГТУ
+# WildWood-Desktop. Хакатон Spring 2022 ДГТУ. Не поддерживается разработчиками.
 
 ## Проблема
 Анализ изображения на наличие леса и нахождение процентна его поверхности. [Показать полностью](https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/Hackathon%20Problem.pdf)
