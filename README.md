@@ -4,6 +4,8 @@
   <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/WWLogo.png" />
 </p>
 
+
+
 # WildWood Desktop. Hackathon Spring 2022 DSTU.
 
 ## Problem
@@ -11,6 +13,10 @@ Analysis of the image for the presence of a forest and finding a percentage on i
 
 ## Solution
 A desktop application with built-in online maps that allows you to take satellite images of different times and calculate the percentage of forest cover using computer vision.
+
+<p align="center">
+  <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/example.gif" />
+</p>
 
 ## Technology stack
 ### Frontend
@@ -29,6 +35,10 @@ C# (.Net Core) + Python + OpenCV
 
 ## Решение
 Настольное приложение со встроенными онлайн-картами, позволяющее делать спутниковые снимки разного времени и вычислять процент лесного покрова с помощью компьютерного зрения.
+
+<p align="center">
+  <img src="https://github.com/VyacheslavPridchin/WildWood-Desktop/blob/main/example.gif" />
+</p>
 
 ## Стек технологий
 ### Frontend
