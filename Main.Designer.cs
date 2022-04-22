@@ -30,18 +30,19 @@ namespace WildWood_Desktop
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.animator = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.wwButton8 = new WWButton();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.panel2 = new System.Windows.Forms.Panel();
             this.chromiumWebBrowser1 = new CefSharp.WinForms.ChromiumWebBrowser();
+            this.wwButton7 = new WWButton();
+            this.wwButton6 = new WWButton();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.wwButton8 = new WWButton();
-            this.wwButton7 = new WWButton();
-            this.wwButton6 = new WWButton();
             this.wwButton5 = new WWButton();
             this.wwButton4 = new WWButton();
             this.wwButton3 = new WWButton();
@@ -49,6 +50,7 @@ namespace WildWood_Desktop
             this.wwLabel1 = new WWLabel();
             this.wwButton2 = new WWButton();
             this.wwButton1 = new WWButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
@@ -98,6 +100,20 @@ namespace WildWood_Desktop
             this.panel3.TabIndex = 6;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseDown);
             // 
+            // wwButton8
+            // 
+            this.wwButton8.BackColor = System.Drawing.Color.Silver;
+            this.wwButton8.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.wwButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.wwButton8.Location = new System.Drawing.Point(74, 300);
+            this.wwButton8.Name = "wwButton8";
+            this.wwButton8.ShadowColor = System.Drawing.Color.Black;
+            this.wwButton8.Size = new System.Drawing.Size(198, 35);
+            this.wwButton8.TabIndex = 14;
+            this.wwButton8.Text = "Обновить";
+            this.wwButton8.UseVisualStyleBackColor = false;
+            this.wwButton8.Click += new System.EventHandler(this.wwButton8_Click);
+            // 
             // trackBar1
             // 
             this.trackBar1.Location = new System.Drawing.Point(372, 439);
@@ -127,47 +143,6 @@ namespace WildWood_Desktop
             this.chromiumWebBrowser1.Size = new System.Drawing.Size(909, 352);
             this.chromiumWebBrowser1.TabIndex = 0;
             // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.AutoScroll = true;
-            this.flowLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 430);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(299, 214);
-            this.flowLayoutPanel3.TabIndex = 10;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(24, 73);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(299, 219);
-            this.flowLayoutPanel2.TabIndex = 9;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(370, 508);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(654, 188);
-            this.flowLayoutPanel1.TabIndex = 8;
-            // 
-            // wwButton8
-            // 
-            this.wwButton8.BackColor = System.Drawing.Color.Silver;
-            this.wwButton8.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.wwButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wwButton8.Location = new System.Drawing.Point(74, 300);
-            this.wwButton8.Name = "wwButton8";
-            this.wwButton8.ShadowColor = System.Drawing.Color.Black;
-            this.wwButton8.Size = new System.Drawing.Size(198, 35);
-            this.wwButton8.TabIndex = 14;
-            this.wwButton8.Text = "Обновить";
-            this.wwButton8.UseVisualStyleBackColor = false;
-            this.wwButton8.Click += new System.EventHandler(this.wwButton8_Click);
-            // 
             // wwButton7
             // 
             this.wwButton7.BackColor = System.Drawing.Color.Silver;
@@ -195,6 +170,33 @@ namespace WildWood_Desktop
             this.wwButton6.Text = "В избранное";
             this.wwButton6.UseVisualStyleBackColor = false;
             this.wwButton6.Click += new System.EventHandler(this.wwButton6_Click);
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AutoScroll = true;
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 430);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(299, 214);
+            this.flowLayoutPanel3.TabIndex = 10;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(24, 73);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(299, 219);
+            this.flowLayoutPanel2.TabIndex = 9;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(370, 508);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(654, 188);
+            this.flowLayoutPanel1.TabIndex = 8;
             // 
             // wwButton5
             // 
@@ -236,6 +238,7 @@ namespace WildWood_Desktop
             this.wwButton3.TabIndex = 5;
             this.wwButton3.Text = "Загрузить изображение";
             this.wwButton3.UseVisualStyleBackColor = false;
+            this.wwButton3.Click += new System.EventHandler(this.wwButton3_Click);
             // 
             // wwLabel2
             // 
@@ -289,6 +292,10 @@ namespace WildWood_Desktop
             this.wwButton1.UseVisualStyleBackColor = false;
             this.wwButton1.Click += new System.EventHandler(this.wwButton1_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Filter = "Изображения|*.jpg;*.jpeg;*.png";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -298,6 +305,7 @@ namespace WildWood_Desktop
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -330,5 +338,6 @@ namespace WildWood_Desktop
         private System.Windows.Forms.Timer animator;
         private System.Windows.Forms.TrackBar trackBar1;
         private WWButton wwButton8;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

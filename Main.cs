@@ -87,7 +87,9 @@ namespace WildWood_Desktop
 
             ClientExtensions.main = this;
 
-            chromiumWebBrowser1.LoadUrl("https://livingatlas.arcgis.com/wayback/#active=29260&ext=39.70348,47.23697,39.72033,47.24410&localChangesOnly=true");
+            chromiumWebBrowser1.LoadUrl("https://livingatlas.arcgis.com/wayback/#localChangesOnly=true");
+
+             
         }
 
         private void panel2_Click(object sender, EventArgs e)
@@ -131,7 +133,9 @@ namespace WildWood_Desktop
         private void wwButton4_Click(object sender, EventArgs e)
         {
             Report report = new Report(mapSets);
-            report.Show();
+            report.ShowDialog();
+            History history = new History("Отчёт от " + DateTime.Now.ToString());
+            flowLayoutPanel3.Controls.Add(history);
         }
 
         public byte[] ImageToByteArray(System.Drawing.Image imageIn)
@@ -152,7 +156,9 @@ namespace WildWood_Desktop
         {
             Cover cover = new Cover(this);
             cover.Show();
+            cover.Owner = this;
             cover.Location = this.Location;
+            cover.Focus();
         }
 
         public void AddMapSet(string name)
@@ -164,6 +170,17 @@ namespace WildWood_Desktop
             }
             MapSet mapSet = new MapSet(img);
             File.Delete("screenshot.png");
+            mapSet.name = name;
+            mapSet.url = chromiumWebBrowser1.Address;
+            mapSet.sens = trackBar1.Value;
+            (mapSet.Controls.Find("label", true)[0] as WWLabel).Text = name;
+            flowLayoutPanel1.Controls.Add(mapSet);
+            mapSets.Add(mapSet);
+        }
+
+        public void AddMapSet(string name, Image image)
+        {
+            MapSet mapSet = new MapSet(image);
             mapSet.name = name;
             mapSet.url = chromiumWebBrowser1.Address;
             mapSet.sens = trackBar1.Value;
@@ -200,6 +217,18 @@ namespace WildWood_Desktop
         {
             File.Delete("token");
             Application.Exit();
+        }
+
+        private void wwButton3_Click(object sender, EventArgs e)
+        {
+            var resultDialog = openFileDialog1.ShowDialog();
+
+            if (resultDialog == DialogResult.OK)
+            {
+                Dialog dialog = new Dialog("Введите имя карты");
+                dialog.ShowDialog();
+                AddMapSet(Dialog.result == "" ? "Карта" : Dialog.result, new Bitmap(openFileDialog1.FileName));
+            }
         }
     }
 }

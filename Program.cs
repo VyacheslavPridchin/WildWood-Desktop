@@ -21,7 +21,7 @@ namespace WildWood_Desktop
         {
             Painter.Fonts.LoadFonts();
 
-            client.Connect(GetUniqueKey(), "26.40.144.108", 44444);
+            client.Connect(GetUniqueKey(), "62.33.231.152", 44444);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

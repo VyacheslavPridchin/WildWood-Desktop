@@ -29,6 +29,7 @@ namespace WildWood_Desktop
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dialog));
             this.wwInput1 = new WWInput();
             this.wwLabel1 = new WWLabel();
             this.wwButton3 = new WWButton();
@@ -97,6 +98,7 @@ namespace WildWood_Desktop
             this.Controls.Add(this.wwLabel1);
             this.Controls.Add(this.wwInput1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Dialog";
@@ -104,6 +106,7 @@ namespace WildWood_Desktop
             this.Text = "Ц";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dialog_FormClosing);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Dialog_MouseDown);
             this.ResumeLayout(false);
 
         }

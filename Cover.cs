@@ -35,6 +35,8 @@ namespace WildWood_Desktop
             {
                 this.Close();
             }
+
+            mainForm.TopMost = false;
         }
 
         Bitmap bitmap;
@@ -42,7 +44,7 @@ namespace WildWood_Desktop
         {
             bitmap = new Bitmap(496, 305);
             Graphics g = Graphics.FromImage(bitmap);
-            g.CopyFromScreen(new Point(this.Location.X + 754, this.Location.Y + 137), Point.Empty, new Size(496, 305));
+            g.CopyFromScreen(new Point(this.Location.X + 749, this.Location.Y + 137), Point.Empty, new Size(501, 280));
             bitmap.Save("screenshot.png");
             bitmap.Dispose();
         }

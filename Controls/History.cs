@@ -12,9 +12,15 @@ namespace WildWood_Desktop.Controls
 {
     public partial class History : UserControl
     {
-        public History()
+        public History(string text)
         {
             InitializeComponent();
+            label.Text = text;
+        }
+
+        private void label_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

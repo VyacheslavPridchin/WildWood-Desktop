@@ -57,7 +57,6 @@ namespace WildWood_Desktop
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cover";
-            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Load += new System.EventHandler(this.Cover_Load);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Cover_KeyUp);

@@ -41,7 +41,7 @@ namespace WildWood_Desktop.Controls
             this.label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label.Location = new System.Drawing.Point(146, 6);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(286, 25);
+            this.label.Size = new System.Drawing.Size(120, 25);
             this.label.TabIndex = 1;
             this.label.Text = "Название карты";
             this.label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -74,6 +74,7 @@ namespace WildWood_Desktop.Controls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.wwLabel2);
             this.Controls.Add(this.label);
             this.Controls.Add(this.icon);
