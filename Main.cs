@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using WildWood_Desktop.Controls;
 using System.IO;
@@ -87,7 +83,7 @@ namespace WildWood_Desktop
 
             ClientExtensions.main = this;
 
-            chromiumWebBrowser1.LoadUrl("https://livingatlas.arcgis.com/wayback/#localChangesOnly=true");
+            chromiumWebBrowser1.LoadUrl("https://yandex.ru/map-widget/v1/-/CCUFyOxVxA");
 
              
         }

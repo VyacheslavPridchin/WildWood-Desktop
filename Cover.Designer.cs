@@ -35,9 +35,9 @@ namespace WildWood_Desktop
             // empty
             // 
             this.empty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.empty.Location = new System.Drawing.Point(749, 137);
+            this.empty.Location = new System.Drawing.Point(590, 133);
             this.empty.Name = "empty";
-            this.empty.Size = new System.Drawing.Size(501, 280);
+            this.empty.Size = new System.Drawing.Size(614, 280);
             this.empty.TabIndex = 0;
             this.empty.Paint += new System.Windows.Forms.PaintEventHandler(this.empty_Paint);
             // 
